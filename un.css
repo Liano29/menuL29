@@ -1,0 +1,104 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient( blue,purple,orange) ;
+   padding: 50px 50px;
+}
+.cartes {
+    display: flex;
+    gap: 20px;
+   background-color: aqua;
+   padding: 20px 30px;
+   border-color: blueviolet;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 10px;
+    overflow: auto;
+    
+}
+.carte{
+
+    display: auto;
+justify-content: space-between;
+align-items: center;;
+   padding: 10px 60px;
+   margin: 10px 20px;
+   border-radius: 100px;
+   border-color: black;
+   border-width: 10px;
+border-style: groove;
+cursor: default;
+
+
+}
+.titre {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+
+}
+.texte {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+.sidebar {
+    width: 200px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: double;
+    cursor: pointer;
+}
+.menu {
+    flex: 1;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: double;
+    cursor: pointer;
+}
+.b1 {
+    background:linear-gradient(blue, purple);
+margin: 5px 5px; 
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+}
+.contacte{
+
+   background-color: aliceblue;
+    padding: 2px 1px;
+    margin: 5px 5px;
+    border-style: solid;
+    
+}
+@media (max-width: 900px) {
+    .cartes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carte {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.b1:hover{
+    background: linear-gradient(blue, purple, orange);
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+
+}
